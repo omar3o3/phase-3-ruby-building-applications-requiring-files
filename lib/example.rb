@@ -1,3 +1,5 @@
+require 'pry'
+
 class Garden
   attr_accessor :name
 
@@ -27,12 +29,15 @@ class Plant
   end
 end
 
-lawn = Garden.new(name: 'Front Lawn')
+pp lawn = Garden.new(name: 'Front Lawn')
 
-basil = Plant.new(name: 'Basil')
-basil.garden = lawn
+pp basil = Plant.new(name: 'Basil')
+pp basil.garden = lawn
+# pp basil.garden
 
-cucumber = Plant.new(name: 'Cucumber')
-cucumber.garden = lawn
+pp cucumber = Plant.new(name: 'Cucumber')
+pp cucumber.garden = lawn
 
-p lawn.plants
+pp lawn.plants
+
+# binding.pry
